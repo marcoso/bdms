@@ -1,0 +1,67 @@
+.input-text {
+	color: #ff7400;
+	font-style: italic;
+	margin-right: 20px;	
+	margin-top: 5px;	
+	font-size: 15px;			  
+}
+
+#add-donor-container{    
+    background-color: #0C0C0C;    
+    border: none;
+    border-color: #FFC200;    
+    border-radius: 4px;   
+		margin-top: 0px; 
+		margin-bottom: 50px;     
+}
+
+#add-donor-container label{
+	color: white;	
+}
+
+.light-text {
+  color: white;
+}
+
+.highlighted-text{
+  color: #FFC200; 	
+}	
+
+.colored-label{
+  color: #FFC200 !important; 
+}
+
+.default-button{
+  background-color: #FFC200;
+}
+
+.alert {
+	margin-top: 10px;
+	padding: 6px;
+	font-style: italic;
+	word-wrap: break-word;
+}
+
+.alert-validation {
+	margin-top: 10px;
+	margin-bottom: 10px;	
+	font-style: italic;
+	word-wrap: break-word;
+	color: white;
+}
+
+.alert div{
+	margin-bottom: 5px;
+}
+
+.alert-text{
+	color: darkred;
+}
+
+.donor-information-clear{
+	margin-bottom: 5px;
+}
+
+.separator-bottom{
+	border-bottom: 1px solid #e5e5e5;
+}

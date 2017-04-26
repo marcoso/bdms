@@ -1,0 +1,60 @@
+body {
+	background-color: #262626 !important;
+}
+
+.page-header h3 {
+	color: white;	
+}
+
+a {
+  color: #00B7FF;
+}
+
+.index-container{
+	max-width: 400px;
+}
+
+#map {
+	 height: 100%;
+	 width: 100%;
+	 margin: 0;
+	 padding: 0;
+}  
+
+#LocateButton {	
+	position: absolute;
+	margin-top: 85px;
+	margin-left: 22px;
+	z-index: 50;
+} 
+
+esri-map .map {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.map-col {
+  padding: 0;
+}
+
+esri-map esri-search .arcgisSearch {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 65px;
+}
+
+.pane {
+	padding: 1em;
+}
+
+.itemCursor {
+    cursor: pointer;
+}
+
+.hiddenItem {
+    display: none;
+}

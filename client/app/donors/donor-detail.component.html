@@ -1,0 +1,79 @@
+<div class="row">        
+    <div id="add-donor-container" class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-md-offset-3 col-sm-offset-2">        
+        <form novalidate (ngSubmit)="addDonor()" [formGroup]="donorGroup">
+            <div class="separator-bottom donor-information-clear">                                            
+                <h3 id="add-donor-container-Label" class="highlighted-text"><span class="glyphicon glyphicon-edit"></span> Donor Information</h3>                
+            </div>
+            <div>
+                <div class="form-group">	    	
+                    <label class="colored-label">Please enter your...</label>    		    		    	                                                        
+                </div>
+                <div class="form-group">                                        
+                    <input type="text" class="form-control input-text" placeholder="First name..." formControlName="firstname">	    	                                                                    
+                    <div class="alert-validation" *ngIf="donorGroup.get('firstname').hasError('required') && donorGroup.get('firstname').touched">
+                        <span class="glyphicon glyphicon-exclamation-sign alert-text"></span>                                            
+                        <strong>First name is required</strong>                  
+                    </div>                    
+                </div>
+                <div class="form-group">                                    
+                    <input type="text" class="form-control input-text" placeholder="Last name..." formControlName="lastname">	                    
+                    <div class="alert-validation" *ngIf="donorGroup.get('lastname').hasError('required') && donorGroup.get('lastname').touched">
+                        <span class="glyphicon glyphicon-exclamation-sign alert-text"></span>                                                
+                        <strong>Last name is required</strong>    
+                    </div>
+                </div>		
+                <div class="form-group">                                    
+                    <input type="text" class="form-control input-text" placeholder="Contact number..." formControlName="contactnumber">	                        
+                    <div class="alert-validation" *ngIf="donorGroup.get('contactnumber').hasError('required') && donorGroup.get('contactnumber').touched || donorGroup.get('contactnumber').hasError('pattern')">
+                        <span class="glyphicon glyphicon-exclamation-sign alert-text"></span>                                                
+                        <strong>Contact is required, valid numbers are +xx xxx xxxx xxx or 00xx xxx xxxx xxx</strong>                        
+                    </div>                    
+                </div>		
+                <div class="form-group">                    
+                    <input type="email" class="form-control input-text" placeholder="Email address..." formControlName="emailaddress">                        
+                    <div class="alert-validation" *ngIf="donorGroup.get('emailaddress').hasError('required') && donorGroup.get('emailaddress').touched || donorGroup.get('emailaddress').hasError('pattern')">
+                        <span class="glyphicon glyphicon-exclamation-sign alert-text"></span>                        
+                        <strong>Please enter a valid email address</strong>
+                    </div>                        
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control input-text" placeholder="Blood group..." formControlName="bloodgroup">                    
+                    <div class="alert-validation" *ngIf="donorGroup.get('bloodgroup').hasError('required') && donorGroup.get('bloodgroup').touched">
+                        <span class="glyphicon glyphicon-exclamation-sign alert-text"></span>
+                        <strong>Blood group is required</strong>
+                    </div>                    
+                </div>               
+                <div class="form-group">	    	
+                    <label class="colored-label"><span class="glyphicon glyphicon-globe" ></span> Your address is...</label>    		    		    	                                    
+                    <input type="text" class="form-control input-text" formControlName="address">    		    			    				    	
+                </div>	  	  		  	  
+                <div class="form-group">	    	
+                    <label class="colored-label" for="xcoordinate">X-Coordinate:</label>    		    		    			    			    		                    
+                    <input type="text" class="form-control input-text" formControlName="xcoordinate">    		    			    				    	
+                </div>	  	  
+                <div class="form-group">	    	
+                    <label class="colored-label" for="ycoordinate">Y-Coordinate:</label>    		    		    	                    
+                    <input type="text" class="form-control input-text" formControlName="ycoordinate">    		    			    				    	
+                </div>	  	  
+                <div class="form-group">	    	
+                    <label class="colored-label" for="locationWkid">Geographic Coordinate System (well-known ID):</label>    		    		    	                    
+                    <input type="text" class="form-control input-text" formControlName="locationWkid">    		    			    				    	
+                </div>
+                <div *ngIf='donor.linkforedit' class="alert alert-success col-xs-12 col-sm-12 col-md-12" role="alert">                    
+                    <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        Your data has been saved, to update your information in the future use this link:</p>
+                    <p><strong> {{donor.linkforedit}}</strong></p>
+                </div>
+                <div *ngIf='errorMessage' class="alert alert-danger col-xs-12 col-sm-12 col-md-12" role="alert">                    
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <strong>{{errorMessage}}</strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)='cancelOperation()' novalidate>Close</button>                            
+                <button type="button" class="btn default-button" *ngIf='donor.id' (click)='deleteDonor()'>Remove</button>
+                <button type="submit" class="btn default-button" [disabled]="donorGroup.invalid">Save changes</button>
+            </div>
+        </form>   	        
+    </div>    
+</div>
