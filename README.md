@@ -1,5 +1,5 @@
 # Blood Donors Management System (bdms)
-Sample app using ArcGIS mapping platform with ESRI maps, Angular2 and Socket.io, unit testing is performed using Jasmine and Karma test runner.
+Sample app using ArcGIS mapping platform with ESRI maps, Angular2, Express, Nodejs and Socket.io, unit testing is performed using Jasmine and Karma test runner.
 
 This application would allow patients to search for blood donors near them or search in the world map for a specif location, the patient can see the donors information, also any possible donor can search for it's location and by clicking on the map fill a form with his/her data in order to become a donor.
 
@@ -17,9 +17,9 @@ Run the mongod executable through command line:
 - Server will start listening for connections
 
 Run the application:
-- Copy the files under the Code folder to your desired location
+- Copy the project files to your desired location
 - Run a command line window (Having NPM installed and configured) and move to the folder you just copied the application files
-- Install dependencies by typing: npm install (this will look into package.json file and install all that packages described)
+- Install dependencies by typing: npm install (this will look into package.json file and install all those described packages)
 - After installation is complete you can validate all the packages installed by typing the command: npm list --depth=0
 - Compile the app and run it by typing: npm start
 - Node will start listening for connections after webpack modules are loaded
@@ -28,5 +28,5 @@ Run the application:
 Run the tests with karma:
 - Run a command line window (Having NPM installed and configured) and move to the folder where the application is located
 - Execute the following command: npm test
-- The previous command will make webpack to compile the application, load the needed components and then the karma runner will take place
+- The previous command will make webpack compile the application, load the needed components and then the karma runner will take place
 - The result of the test executions will be displayed
