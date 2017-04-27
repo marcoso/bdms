@@ -30,3 +30,8 @@ Run the tests with karma:
 - Execute the following command: npm test
 - The previous command will make webpack compile the application, load the needed components and then the karma runner will take place
 - The result of the test executions will be displayed
+
+# Sample screenshots
+
+https://cloud.githubusercontent.com/assets/8292572/25489964/d32f6a6a-2b41-11e7-8739-e51714b30644.PNG
+
