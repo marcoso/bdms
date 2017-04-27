@@ -33,5 +33,5 @@ Run the tests with karma:
 
 # Sample screenshots
 
-[[https://cloud.githubusercontent.com/assets/8292572/25489964/d32f6a6a-2b41-11e7-8739-e51714b30644.PNG]]
+[[https://cloud.githubusercontent.com/assets/8292572/25489964/d32f6a6a-2b41-11e7-8739-e51714b30644.PNG|alt=octocat]]
 
