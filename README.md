@@ -35,3 +35,12 @@ Run the tests with karma:
 
 ![Search Results](https://cloud.githubusercontent.com/assets/8292572/25489964/d32f6a6a-2b41-11e7-8739-e51714b30644.PNG)
 
+![Donor Details](https://cloud.githubusercontent.com/assets/8292572/25489996/ee99f9c8-2b41-11e7-8ec0-d33e33f0dcad.PNG)
+
+![Add Donor](https://cloud.githubusercontent.com/assets/8292572/25490003/f34799c6-2b41-11e7-8f46-d5a13bee88af.PNG)
+
+![Mobile View](https://cloud.githubusercontent.com/assets/8292572/25490010/f786d330-2b41-11e7-87c0-c663d560a7ec.PNG)
+
+![Mobile Detail](https://cloud.githubusercontent.com/assets/8292572/25490013/fb3176b6-2b41-11e7-8523-ec2441841d4a.PNG)
+
+![Mobile Add Donor](https://cloud.githubusercontent.com/assets/8292572/25490022/fff7e9b4-2b41-11e7-97e7-7615ae8d4229.PNG)
